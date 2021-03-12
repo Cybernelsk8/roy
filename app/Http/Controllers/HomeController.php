@@ -11,21 +11,26 @@ class HomeController extends Controller
         $links = [
             [
                 'name' => 'Nosotros',
-                'route'=> '',
+                'url'=> '',
                 'active' => ''
             ],
             [
                 'name' => 'Trabaja con nosotros',
-                'route'=> '',
+                'url'=> '#trabajaconnosotros',
                 'active' => ''
             ],
             [
                 'name' => 'Contacto',
-                'route'=> '',
+                'url'=> '#contacto',
                 'active' => ''
             ],
+            [
+              'name' => 'Ubicaciones',
+              'url' => '#',
+              'active' => ''
+            ],
 
-            
+
         ];
 
         return view('welcome',compact('links'));

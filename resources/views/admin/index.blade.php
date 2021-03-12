@@ -7,11 +7,17 @@
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="text-center text-danger">Que pulguitas</h1>
+        </div>
+    </div>
 @stop
 
 @section('footer')
-    <p>Cybersoft</p>
+    <div class="text-center">
+        <span class="text-gray-500"><strong>Copyright Cybernelsk8 &copy; 2017-{{ date('Y') }} Roy</strong> All rights reserved.</span>
+    </div>
 @stop
 
 @section('css')

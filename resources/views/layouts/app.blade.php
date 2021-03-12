@@ -22,7 +22,7 @@
         <x-jet-banner />
 
         <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
+            {{-- @livewire('navigation-menu') --}}
             <!-- Page Content -->
             <main>
                 {{ $slot }}
@@ -32,5 +32,7 @@
         @stack('modals')
 
         @livewireScripts
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="{{asset('js/scripts.js')}}"></script>
     </body>
 </html>
