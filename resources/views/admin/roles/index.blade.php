@@ -10,7 +10,6 @@
     <div class="card">
         <div class="card-body">
             <h1 class="text-center text-danger">Que pulguitas</h1>
-            <i class="fas fa-users"></i>
         </div>
     </div>
 @stop
@@ -26,7 +25,5 @@
 @stop
 
 @section('js')
-    <script> 
-        $('.card').addClass('bg-primary');
-    </script>
+    <script> console.log('Hi!'); </script>
 @stop

@@ -11,7 +11,7 @@
       <p class="mt-2 text-center text-sm text-gray-600">
           Si no tienes cuenta registrate 
         <a href="{{route('register')}}" class="font-medium text-blue-900 hover:text-blue-900">
-          aquí
+          <strong>aquí</strong>
         </a>
       </p>
     </div>
