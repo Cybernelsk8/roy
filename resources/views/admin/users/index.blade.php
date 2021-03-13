@@ -16,9 +16,6 @@
         </div>   
     @endif
     <div class="card">
-        <div class="card-header">
-            <a class="btn btn-primary" href="{{route('admin.users.create')}}"><i class="fas fa-user-plus"></i> Crear usuario</a>
-        </div>
         <div class="card-body">
             <table class="table table-striped">
                 
