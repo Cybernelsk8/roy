@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Crud roles')
+@section('title', 'Crud usuarios')
 
 @section('content_header')
-    <h1>Lista de roles</h1>
+    <h1>Lista de usuarios</h1>
 @stop
 
 @section('content')
@@ -15,47 +15,42 @@
             </button>
         </div>   
     @endif
-
-
     <div class="card">
         <div class="card-header">
-            <a class="btn btn-primary" href="{{route('admin.roles.create')}}"><i class="fas fa-plus"></i> Crear role</a>
+            <a class="btn btn-primary" href="{{route('admin.users.create')}}"><i class="fas fa-user-plus"></i> Crear usuario</a>
         </div>
         <div class="card-body">
             <table class="table table-striped">
                 
-                <thead>
+                <thead class="bg-secondary">
                     <tr>
                         <th>ID</th>
-                        <th>Nombre</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Código</th>
+                        <th>Correo</th>
+                        <th>Contratacion</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
 
-
                 <tbody>
-                    @foreach ($roles as $role)
+                    @foreach ($users as $user)
                         <tr>
-                            <td>{{$role->id}}</td>
-                            <td>{{$role->name}}</td>
-                            <td width="12px">
-                                <div class='btn-group'>
-                                    <a href="{{route('admin.roles.edit',$role)}}" class='btn btn-success btn-sm'>
-                                        <i class='fas fa-edit'></i>
-                                    </a>
-                                    <form action="{{route('admin.roles.destroy',$role)}}" method="POST">
-                                        @method('delete')
-                                        @csrf
-                                        <button type="submit" class='btn btn-danger btn-sm'>
-                                            <i class='fas fa-trash-alt'></i>
-                                        </button>
-                                    </form>
-                                </div>
+                            <td>{{$user->id}}</td>
+                            <td>{{$user->name}}</td>
+                            <td>{{$user->lastname}}</td>
+                            <td>{{$user->username}}</td>
+                            <td>{{$user->email}}</td>
+                            <td>{{$user->created_at->diffForHumans()}}</td>
+                            <td align="center" width="10px">
+                            <a href="{{route('admin.users.edit',$user)}}" class='btn btn-success btn-sm' alt="Asignar role">
+                                <i class="fas fa-user-tag"></i>
+                            </a>
                             </td>
                         </tr>
                     @endforeach
                 </tbody>
-
             </table>
         </div>
     </div>
@@ -72,5 +67,5 @@
 @stop
 
 @section('js')
-    
+
 @stop

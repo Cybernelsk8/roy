@@ -1,15 +1,18 @@
 @extends('adminlte::page')
 
-@section('title', 'Inicio')
+@section('title', 'Editar role')
 
 @section('content_header')
-    <h1>Inicio</h1>
+    <h1>Editar role</h1>
 @stop
 
 @section('content')
     <div class="card">
         <div class="card-body">
-            <h1 class="text-center text-danger">Que pulguitas</h1>
+            {!! Form::model($role,['route'=>['admin.roles.update',$role],'method'=>'put']) !!}
+                @include('admin.roles.partials.form')
+                {!! Form::button('<i class="fa fa-sync"></i> Actualizar role', ['type'=>'submit','class'=>'btn btn-primary btn-lg mt-2']) !!}
+            {!! Form::close() !!}
         </div>
     </div>
 @stop

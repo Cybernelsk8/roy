@@ -245,7 +245,15 @@ return [
             'text'        => 'Lista de roles',
             'route'         => 'admin.roles.index',
             'icon'        => 'fas fa-fw fa-users-cog',
+            'active' => ['admin/roles*'],
         ],
+        [
+            'text'        => 'Usuarios',
+            'route'         => 'admin.users.index',
+            'icon'        => 'fas fa-fw fa-users',
+            'active' => ['admin/users*'],
+        ],
+
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
@@ -349,7 +357,7 @@ return [
 
     'plugins' => [
         'Datatables' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
@@ -394,7 +402,7 @@ return [
             ],
         ],
         'Sweetalert2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',

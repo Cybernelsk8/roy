@@ -26,7 +26,5 @@
 @stop
 
 @section('js')
-    <script> 
-        $('.card').addClass('bg-primary');
-    </script>
+
 @stop
