@@ -4,7 +4,7 @@
   <div class="max-w-md w-full space-y-8">
     {{-- logo --}}
     <div>
-      <img class="mx-auto h-12 w-auto" src="{{asset('img/other/logo.png')}}" alt="Calzado Roy">
+      <img class="mx-auto" src="{{asset('img/other/logoroy.png')}}"  width="200" alt="Calzado Roy">
       <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Iniciar sesión en tu cuenta
       </h2>
