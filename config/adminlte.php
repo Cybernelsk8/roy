@@ -249,7 +249,7 @@ return [
             'can' => 'Leer',
         ],
         [
-            'text'        => 'Usuarios',
+            'text'        => 'Asignar role',
             'route'         => 'admin.users.index',
             'icon'        => 'fas fa-fw fa-users',
             'active' => ['admin/users*'],

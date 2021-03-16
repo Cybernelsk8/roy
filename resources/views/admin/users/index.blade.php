@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Crud usuarios')
+@section('title', 'Asiganar role')
 
 @section('content_header')
-    <h1>Lista de usuarios</h1>
+    <h1>Lista de usuarios para asignar un role</h1>
 @stop
 
 @section('content')
@@ -13,12 +13,12 @@
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
-        </div>   
+        </div>
     @endif
     <div class="card">
         <div class="card-body">
             <table class="table table-striped">
-                
+
                 <thead class="bg-secondary">
                     <tr>
                         <th>ID</th>
@@ -53,11 +53,7 @@
     </div>
 @stop
 
-@section('footer')
-    <div class="text-center">
-        <span class="text-gray-500"><strong>Copyright Cybernelsk8 &copy; 2017-{{ date('Y') }} Roy</strong> All rights reserved.</span>
-    </div>
-@stop
+
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">

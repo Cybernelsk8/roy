@@ -141,7 +141,7 @@
                                     Nosotros
                                   </dt>
                                   <dd class="mt-2 text-base text-gray-500 text-justify">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                                    Hace más de 35 años se buscaba en Guatemala contar con calzado sinónimo de calidad, por lo que nace Calzado Roy con productos y diseños originales, de alta rotación, durables, modernos y adaptables a las exigencias del mercado guatemalteco.
                                   </dd>
                                 </div>
                               </div>
